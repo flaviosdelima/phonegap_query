@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Phonegap + jQuery Mobile</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="_assets/css/jqm-demos.css">
+    <link rel="stylesheet" href="css/custom_css.css">
+	<script src="js/jquery.js"></script>
+	<script src="_assets/js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/custom.js"></script>
+	<script id="popup-arrow-script">
+	$.mobile.document.on( "click", "#open-popupArrow", function( evt ) {
+		$( "#popupArrow" ).popup( "open", { x: evt.pageX, y: evt.pageY } );
+		evt.preventDefault();
+	});
+	</script>
+ 
+</head>
+<body>
+ 
+	<div id="hpage" data-role="page">
+		<div data-role="header" data-add-back-btn="true">
+		<h1><img src="_assets/img/apple.png" alt="Logo">Quizz</h1>
+		</div>
+		<div role="main" class="ui-content">
+			<a href="#page1" data-role="button">go to page 1</a>
+            
+            <a href="index.html" target="_self" data-role="button">go to home</a>
+            
+            <div data-role="collapsible" class="center-header">
+                <h4>Songs That Contains This Video</h4>
+                <ul>                     
+                    <li>...1- 0:00 - The Outfield - Your Love</li>
+                    <li>...2- 3:31 - Cindy Lauper - True Colors</li>
+                    <li>* 3- 7:09 - Bee Gees - Stying Alive</li>
+                    <li>...4- 11:44 - Stivie Wonder - Superstintion</li>
+                    <li>...5- 15:37 - Men at Work - Who can´t Bee Now </li>
+                    <li>...6- 18:50 - Lipps Inc - Designer Music</li>
+                    <li>...7-:( MUTED ): - Eagles - I Can´t Teel You Why</li>
+                </ul>
+            </div>
+			 
+		</div>
+		 
+	</div><!-- /page -->
+    
+</body>
+</html>
